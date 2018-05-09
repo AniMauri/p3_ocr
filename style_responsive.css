@@ -1,0 +1,174 @@
+/*Responsive*/
+
+@media screen and (max-width: 1200px) {
+
+
+		/*apparence générale*/
+
+		/*header*/
+    #contenu_header {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #contenu_header img {
+        height: 75px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+     }
+
+	/*-----------------------------------------------------------------------*/
+		/*slider*/
+
+    #container_slider {
+        position: relative;    
+        background-color: #555;
+        width: 90%;
+        height: 400px;    
+    }
+
+    #slider {
+        width: 80%;
+        height: 400px;
+    }
+
+    .slide figcaption {
+        position: absolute;
+        width: 75%;
+        height: 250px;
+        bottom: 75px;
+        left: 25px;        
+        font-size: 1.2em;
+        z-index: 20;
+        background-color: rgba(24, 24, 24, 0.8);
+    }
+
+    #fleche_gauche { /*flèches de commande du slider*/
+        top: 190px; left: 10px;
+        z-index: 5;
+    }
+
+    #fleche_droite { /*flèches de commande du slider*/
+        top: 190px; right: 10px;
+        z-index: 6;
+    }
+
+		/*-----------------------------------------------------------------------*/
+		/*map*/
+    #container_apis {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #map {
+        width: 100%;
+    }
+
+    #resa {
+        margin-top: 50px;
+        width: 100%;
+        margin-left: 0px;
+        height: 575px; 
+        font-size: 1.2em;
+    }
+    
+    #titre_resa {
+        width: 100%;
+        padding-left: 0px;
+        font-size: 2.5em;
+    }
+
+    #resa h4 {
+        font-family: "rajdhanibold", arial, serif;
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
+
+    /*Container d'infos sur la station sélectionnée*/
+    #station {
+        margin-top: 50px;
+        font-size: 1.5em;
+        height: 400px;  
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    #bouton_resa {
+        position: absolute;
+        width: 70%;
+        height: 75px;
+        margin:auto;
+        bottom: 5px;
+        left: 15%;
+    }
+
+    #bouton_resa:hover {
+        background-color: #555;
+        color: #fff;
+    }
+        /*-----------------------------------------------------------------------*/
+        /*resa et signature*/
+    
+    #signature p {
+        font-size: 1.5em;
+    }
+
+    #formResa input {
+        height: 50px;
+        color: #888;
+        font-size: 1.2em;
+    }
+
+    #canvas {
+        width: 95%;
+        height: 200px;
+    }
+
+    #boutons_valid {
+        width: 90%;
+        display: flex;
+    }
+
+    #boutons_valid button {
+        height: 75px;
+        font-size: 1.5em;   
+    }
+
+    #valider {
+        width: 55%;
+    }
+    
+    #clear {
+        width: 35%;
+    }
+        /*-----------------------------------------------------------------------*/
+        /*footer*/
+
+    
+    
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*Responsive Smartphones*/
+
+@media screen and (max-device-width: 480px) {
+
+    .slide figcaption {
+        position: absolute;
+        width: 90%;
+        height: 300px;
+        bottom: 75px;
+        left: 25px;        
+        font-size: 1.5em;
+        z-index: 20;
+        background-color: rgba(24, 24, 24, 0.8);
+    }
+
+}

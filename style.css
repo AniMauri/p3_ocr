@@ -1,0 +1,434 @@
+/*Feuille de Style Projet Webagency*/
+
+/*Polices*/
+
+
+@font-face {
+    font-family: 'rajdhanibold';
+    src: url('../fonts/rajdhani-bold-webfont.eot'),
+         url('../fonts/rajdhani-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rajdhani-bold-webfont.woff') format('woff'),
+         url('../fonts/rajdhani-bold-webfont.ttf') format('truetype'),
+         url('../fonts/rajdhani-bold-webfont.svg#rajdhanibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Styles généraux*/
+
+html {
+    padding: 0px;
+}
+
+body {
+    background-color: #c3c3c3;
+    background-attachment: fixed;
+    padding: 0px;
+}
+
+/*header*/
+
+header {
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+    padding-top: 20px;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px -2px 15px rgba(0,0,0, 0.5);
+}
+
+#contenu_header {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contenu_header img {
+    height: 90px;
+}
+
+h1 {
+    font-family: "rajdhanibold", arial, serif;
+    text-transform: uppercase;
+}
+
+.section_titre {
+    width: 30%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    border-bottom: 0.2px solid #888;    
+}
+
+h2 {
+    text-align: center;
+    font-family: "rajdhanibold", arial, serif;    
+}
+
+/*slider*/
+
+#section_slider {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 140px;
+    padding-top: 0px;
+}
+
+#container_slider {
+    position: relative;    
+    background-color: #555;
+    width: 70%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding-top: 0px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 5px 15px rgba(0,0,0, 1);     
+}
+
+#slider {
+    width: 75%;
+    max-width: 680px;
+    height: 400px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding-left: 0px;
+}
+
+#liste_slides {
+    list-style-type: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+}
+
+.slide {
+    position:relative;
+    margin-top: 0px;
+    width: 100%;
+    height: 450px;
+    display: none;
+    margin-left: 0px;
+}
+
+.slide h3 {
+    color: #ff0000;
+}
+#slide1 {
+    display: block;
+}
+
+
+h3 {
+    font-family: "rajdhanibold", arial, serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.diapo {
+    width: 100%;
+    min-width: 600px;
+    height: 450px;
+    margin-left: 0px;
+}
+
+.slide figcaption {
+    position: absolute;
+    width: 60%;
+    height: 150px;
+    bottom: 120px;
+    left: 20px;
+    border-radius: 10px 10px 10px 10px;    
+    background-color: rgba(24, 24, 24, 0.9);
+    color: #fff;
+    font-family: arial, serif;
+    font-size: 0.9em;
+    padding-top: 10px;
+    padding-left: 15px;
+    z-index: 20;
+}
+
+.red, .green {
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+.green {
+    color: green;
+}
+
+#fleche_gauche, #fleche_droite {
+    background: rgba(0,0,0,0.6);
+	width: 50px;
+	height: 50px;
+	border-radius: 25px 25px 25px 25px;
+	position: absolute;
+    cursor: pointer;
+}
+
+#fleche_gauche { /*flèches de commande du slider*/
+	top: 190px; left: 70px;
+	z-index: 5;
+}
+
+#fleche_droite { /*flèches de commande du slider*/
+	top: 190px; right: 70px;
+	z-index: 6;
+}
+
+#fleche_droite i {
+	color: white;
+	position: absolute;
+	top: 10px; right: 10px;
+}
+
+#fleche_gauche i {
+	color: white;
+	position: absolute;
+	top: 10px; left: 10px;
+}
+
+
+/*Section map et résa*/
+#container_apis {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 1300px;    
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#map, #resa {    
+    border-radius: 20px 20px 20px 20px;
+}
+
+#map {
+    background-color: #555;    
+    padding: 0px;
+    width: 60%;
+    height: 600px;
+    margin-right: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0, 1);    
+}
+
+#resa {
+    position: relative;
+    border: 0.5px solid #888;
+    background-color: #fff;
+    width: 45%;
+    height: 600px;
+    margin-left: 15px;
+    box-shadow: 0px 5px 15px rgba(0,0,0, 1); 
+}
+
+#titre_resa {
+    width: 90%;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#resa h4 {
+    font-family: "rajdhanibold", arial, serif;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#resa p {
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+/*Container d'infos sur la station sélectionnée*/
+#station {
+    position: relative;
+    margin-top: 50px;
+    font-family: arial, serif;
+    font-size: 0.8em;
+    height: 500px;  
+    padding-left: 15px;
+}
+
+#adresse, #places, #dispo {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#bouton_resa {
+    position: absolute;
+    width: 50%;
+    height: 50px;
+    margin:auto;
+    bottom: 100px;
+    left: 22%;
+    background-color: #cbcbcb;
+    color: #000;
+    font-size: 1.2em;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+#bouton_resa:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Container canvas */
+
+#signature {
+    display: none;
+    width: 100%;
+}
+
+#signature p {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;    
+    text-align: justify;
+    font-family: arial, serif;
+}
+
+#formResa {
+    width: 95%;
+    margin-top: 10px;
+    margin-left: 2%;
+}
+
+#formResa input {
+    width: 98%;
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 5px;
+    color: #888;
+    font-family: arial, serif;
+    font-size: 0.8em;
+    border: 1px dotted #888;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#canvas {
+    width: 95%;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 2%;
+    border: 1px dotted #888;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#boutons_valid {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#boutons_valid button {
+    height: 50px;
+    font-size: 0.8em;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;    
+}
+
+#valider {
+    width: 45%;
+    background-color: #cbcbcb;
+    color: #000;
+}
+
+#valider:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+#clear {
+    width: 40%;
+    background-color: #cbcbcb;
+    color: #979797;
+}
+
+#clear:hover {
+    background-color: #fff;
+    color: #c0c0c0;
+}
+
+/* Container confirmation */
+
+#confirm {
+    width: 85%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    padding: 10px;
+    font-family: "rajdhanibold", arial, serif;
+    font-size: 1.2em;
+    text-transform: uppercase;    
+    color: #186610;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+    background-color: #ccffba;
+    border: 1px dotted #349929;
+    border-radius: 10px 10px 10px 10px;
+} 
+
+/* Décompte */
+
+footer {
+    margin-top: 20px;
+    background-color: #111;
+    color: #fff;
+    font-family: arial, serif;
+    font-size: 0.8em;    
+    text-align: center;    
+}
+
+#infosResa {
+    margin-top: 20px;
+    padding-top: 20px;
+    font-family: arial, serif;
+    font-size: 1.1em;      
+    display: none;
+}
+
+#recapNomStation, #recapAdresseStation, #recapNomClient {
+    color: #ff0000;
+}
+
+#timer {
+    font-family: "rajdhanibold", arial, serif;
+    text-transform: uppercase;
+    font-size: 1.2em;      
+}
+
+#credits {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#credits a {
+    color: #ff0000;
+    text-decoration: none;
+}
